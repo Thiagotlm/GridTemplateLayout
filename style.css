@@ -1,0 +1,41 @@
+body{
+    /*margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 3fr 1fr;
+    grid-template-areas: 
+    "logo navbar"
+    "sidebar main"
+    "sidebar footer";*/
+    display: grid;
+    grid-template: 
+    "logo navbar navbar navbar" 100px
+    "sidebar . main main" 700px
+    "footer footer footer footer" 80px
+    / 1fr 1fr 1fr 1fr   
+}
+
+.logo{
+    background-color: black;
+   grid-area: logo;
+}
+
+nav{
+    background-color: lightgray;
+   grid-area: navbar;
+}
+aside{
+    background-color: grey;
+   grid-area: sidebar;
+}
+
+main{
+    background-color: black;
+    color: white;
+   grid-area: main;
+}
+footer{
+    background-color: lightgray;
+   grid-area: footer;
+}
